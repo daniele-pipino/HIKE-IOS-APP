@@ -2,7 +2,7 @@
 RESUME: 
 
 
-Application that allows, thanks to the use of a button, to change the image dynamically, with the use of a random number from the asstes folder of the project
+Application that allows, thanks to the use of a button, to change the image dynamically, with the use of a random number from the assets folder of the project
 
 TOPICS: 
 
