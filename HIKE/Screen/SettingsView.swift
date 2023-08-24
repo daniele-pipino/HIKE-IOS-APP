@@ -35,6 +35,24 @@ struct SettingsView: View {
 
             //MARK: SECTION ICONS
             //MARK: SECTION ABOUT
+            Section(
+                header: Text("ABOUT THE APP"),
+                footer:HStack{
+                       Spacer()
+                       Text("Copyright © Allright reserved.")
+                       Spacer()
+                }.padding(.vertical, 8)){
+                    //BASIC LABELED CONTENT
+                      //LabeledContent("Application", value: "HIKE")
+                    //ADVANCED LABELED CONTENT
+                    CustomListrow(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "HIKE", rowIconColor: .blue)
+                    CustomListrow(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS, ipadOS", rowIconColor: .yellow)
+                    CustomListrow(rowLabel: "Technology", rowIcon: "swift", rowContent: "SWIFT", rowIconColor: .orange)
+                    CustomListrow(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowIconColor: .purple)
+                    CustomListrow(rowLabel: "Developer", rowIcon: "curlybraces.square.fill", rowContent: "daniele-pipino", rowIconColor: .mint)
+                    CustomListrow(rowLabel: "Website", rowIcon: "globe", rowIconColor: .blue, rowlinkLabel: "in/daniele-pipino", rowlinkDestination: "https://www.google.com")
+                    
+            }
 
         }
     }
