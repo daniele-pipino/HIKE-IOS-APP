@@ -11,6 +11,7 @@ struct CardView: View {
     //MARK: Variables
     @State private var imageNumber:Int = 1
     @State private var randomNumber:Int = 1
+    @State private var isShowingSheet:Bool = false
     
     //MARK: Random number generator function
     
@@ -37,10 +38,17 @@ struct CardView: View {
                             .foregroundStyle(LinearGradient(colors: [.customGrayLight, .customGrayMedium], startPoint: .top, endPoint: .bottom))
                         Button{
                             // ACTION
-                            print("The Button was pressed")
+                            isShowingSheet.toggle()
                         }label:{
                             // Style and aspect
                             CustomButton()
+                        }.sheet(isPresented: $isShowingSheet){
+                            SettingsView()
+                            .presentationDetents(
+                                // medium: starts at 50% and adding large it can be dragged on 100%, we can also add a custom number
+                                [.medium, .large]
+                            )
+                            .presentationDragIndicator(.visible)
                         }
                     }
                         // MARK: - SUBTITLE
