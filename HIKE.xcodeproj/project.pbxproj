@@ -16,6 +16,7 @@
 		647C3F9B2A9646B100C886B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647C3F9A2A9646B100C886B7 /* Assets.xcassets */; };
 		647C3F9E2A9646B100C886B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647C3F9D2A9646B100C886B7 /* Preview Assets.xcassets */; };
 		64EA4D762A9794090042D14D /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA4D752A9794090042D14D /* GradientButtonStyle.swift */; };
+		64EA4D782A97A5700042D14D /* CustomGradientCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA4D772A97A5700042D14D /* CustomGradientCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		647C3F9A2A9646B100C886B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		647C3F9D2A9646B100C886B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64EA4D752A9794090042D14D /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		64EA4D772A97A5700042D14D /* CustomGradientCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGradientCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 				6453AEED2A964E7600600EAE /* CardView.swift */,
 				6453AEF02A96510F00600EAE /* BackgroundView.swift */,
 				6453AEF52A966D8600600EAE /* CustomButton.swift */,
+				64EA4D772A97A5700042D14D /* CustomGradientCircle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EA4D782A97A5700042D14D /* CustomGradientCircle.swift in Sources */,
 				647C3F992A9646AE00C886B7 /* ContentView.swift in Sources */,
 				6453AEEE2A964E7600600EAE /* CardView.swift in Sources */,
 				6453AEF62A966D8700600EAE /* CustomButton.swift in Sources */,

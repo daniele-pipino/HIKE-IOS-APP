@@ -51,17 +51,7 @@ struct CardView: View {
                     }.padding(.horizontal, 20)
                     // MARK: Card Body
                     ZStack{
-                        Circle()
-                            .fill(
-                                LinearGradient(
-                                    colors:
-                                        [Color("ColorIndigoMedium"),
-                                         Color("ColorSalmonLight")],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                            )
-                            .frame(width: 256, height: 256)
+                        CustomGradientCircle()
                         Image("image-\(imageNumber)").resizable().scaledToFit().animation(.default, value: imageNumber)
                     }
                     //MARK: Card Footer
